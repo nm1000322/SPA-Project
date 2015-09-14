@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="320490024409-s84rrvjtb2lnbe7smm3b07fb57rbe88c.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <title>Spa Demo</title>
+  <link rel="stylesheet" href="/css/css.css">
+</head>
+<body>
+  <a href="/landing" class="g-signin2" data-onsuccess="onSignIn" dat-theme="dark"></a>
+  <a href="/"  onclick="signOut();">Sign out</a>
+  <div id="sections">
+    <section id="index">
+      index!
+       <span id=welcome></span>
+
+      <a href="/random">Go to Random</a>
+      <a href="/test">Go to Test</a>
+      <a href="/landing">Go to Welcome!</a>
+    </section>
+
+    <section id="random">
+      <span id="random_number"></span>!
+
+      <a href="/">Go to Index</a>
+    </section>
+
+    <section id="test">
+      <span id="beta">Beta Stuff!</span>
+      <img src="http://www.cats.org.uk/uploads/images/pages/photo_latest14.jpg">
+
+      <a href="/">Go to Index</a>
+      <section id="landing">
+         <span id=welcome></span>
+        index!
+        <a href="/random">Go to Random</a>
+        <a href="/test">Go to Test</a>
+        <a href="/landing">Go to Welcome!</a>
+      </section>
+    </section>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script src="/js/js.js"></script>
+</body>
+</html>

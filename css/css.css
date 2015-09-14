@@ -1,0 +1,7 @@
+div#sections section {
+  display: none;
+}
+#welcome{
+  font-size: 72px;
+  color:blue;
+}
